@@ -1,2 +1,5 @@
 # vimrc
-Vimrc config. 
+Vimrc config.
+
+Keep it simple and practical.
+
