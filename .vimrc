@@ -14,5 +14,5 @@ call vundle#end()
 filetype plugin indent on
 
 set number
-set cursorcolumn=80
+set colorcolumn=80
 set ts=4 sw=4
