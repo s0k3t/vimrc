@@ -15,4 +15,5 @@ filetype plugin indent on
 
 set number
 set colorcolumn=80
+set cursorcolumn
 set ts=4 sw=4
