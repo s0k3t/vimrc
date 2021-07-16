@@ -1,3 +1,5 @@
+#git clone https://github.com/VundleVim/Vundle.vim
+
 set nocompatible
 filetype off
 
