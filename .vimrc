@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'preservim/nerdtree'
 Plugin 'ervandew/supertab'
+Plugin 'vim-polyglot'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()             
 
@@ -33,7 +35,7 @@ set foldlevel=99
 set foldnestmax=5
 set autowrite
 set autowriteall
-set path+=/home/adam/**
+set path+=/home/'user'/**
 set completeopt-=preview
 
 nnoremap <space> za
@@ -44,5 +46,9 @@ let g:SuperTabDefaultCompletionType = "context"
 
 nnoremap <C-t> :NERDTreeToggle<CR>
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+autocmd BufNewFile *.sh 0r ~/skeletons/bash.sh
+autocmd BufNewFile *.c 0r ~/skeletons/code_c.c
+
+colorscheme moonfly
 
 
